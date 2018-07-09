@@ -1,0 +1,58 @@
+import java.util.Scanner;
+class Emplo
+{
+	Scanner s = new Scanner(System.in);
+	String firstname,lastname;
+	int mo_sallary,ye_sallary,total_sallary;
+	int increment;
+	public Emplo()
+	{
+		firstname =" ";
+		lastname =" ";
+		int mo_sallary; 
+		int ye_sallary;
+		int increment;
+		int total_sallary;
+	}
+	void putdata()//For enter the data of Employee
+	{
+		
+			
+		
+		System.out.println("\n Enter the firstname:");
+		firstname = s.nextLine();
+		System.out.println("\n Enter the lastname:");
+		lastname = s.nextLine();
+		System.out.println("\n Enter the mo sallary:");
+		mo_sallary = s.nextInt();
+		ye_sallary = mo_sallary*12;//we know 1year=12 months
+		System.out.println("\n Display ye_sallary: ");
+			increment = ((ye_sallary*10)/100);//if increment is 10%
+				System.out.println(" \n Display increment: "+increment);
+			total_sallary = (ye_sallary+increment);
+				System.out.println(" \n Display total sallary: "+total_sallary);
+	
+	}			
+		void getdata()//Display of Employee data
+		{
+		System.out.println("\n The firstname is:"+firstname);
+		System.out.println("\n The lastname is:"+lastname);
+		System.out.println("\n The mo_sallary is:"+mo_sallary);
+		System.out.println(" \n The ye_sallary is:"+ye_sallary);
+		System.out.println(" \n The increment is:"+increment);
+		System.out.println(" \n The total_sallary is:"+total_sallary);
+		}
+    
+
+
+		public static void main(String args[])
+		{
+		System.out.println(" \n The data of Employee is:");
+		Emplo e1 = new Emplo();//create object of Employee
+		e1.putdata();
+		e1.getdata();
+	
+		}
+
+}
+		
