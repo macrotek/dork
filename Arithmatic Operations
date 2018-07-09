@@ -1,0 +1,15 @@
+class Arith
+{
+public static void main(String args[])
+	{
+int num1=10 , num2=5, add, sub,mult,div;
+ add = num1+num2;
+ sub=num1-num2;
+ mult=num1*num2;
+ div=num1/num2;
+ System.out.println("Addition is:"+add);
+ System.out.println("Substraction is:"+sub);
+ System.out.println("Multiplication is:"+mult);
+ System.out.println("Division is:"+div);
+	}
+}
